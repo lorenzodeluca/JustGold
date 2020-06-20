@@ -1,0 +1,16 @@
+header{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 30px;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+}
+.browse .link{
+    color: #c5c6cc;
+    padding-left: 15px;
+}

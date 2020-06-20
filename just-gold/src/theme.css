@@ -1,0 +1,17 @@
+.home{
+    position: absolute;
+    background-color: #1c2038;
+    height: 100%;
+    width: 100%;
+    color: white; /*#ccd7df */
+}
+
+.logo-img{
+    width: 40px;
+    height: 40px;
+}
+
+.appname{
+    color: #636781;
+    padding-left: 5px;
+}
