@@ -1,0 +1,37 @@
+.transactions-table{
+    color: white;
+}
+.sortingButton{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;  
+    font-size: 25px;
+    color: white;
+}
+.history-line{
+    height: 80px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: #63678148;
+    border-style: solid;
+
+}
+
+.history-line td{
+  vertical-align: middle;
+}
+.history-line th{
+  vertical-align: middle;
+}
+.t-header{
+    background-color: #1c2038;
+    color:#495181;
+}
+
+.t-table{
+}
+.th-name{
+}

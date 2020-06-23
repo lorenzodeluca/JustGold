@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import Home from './components/pages/Home/Home';
+import MyInventory from './components/pages/MyInventory/MyInventory';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './theme.css';
 
@@ -15,7 +16,7 @@ class App extends React.Component {
           )} />
           <Route path="/myinventory" render={props => (
             <React.Fragment>
-              <Home />
+              <MyInventory />
             </React.Fragment>
           )} />
         </div>

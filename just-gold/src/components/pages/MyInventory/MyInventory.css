@@ -1,0 +1,55 @@
+header{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 30px;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+}
+.profileimg{
+    padding-right: 20px;
+}
+.browse .link{
+    color: #c5c6cc;
+    padding-left: 15px;
+}
+.sidebar-logo{
+    width: 300px;
+    padding-left: 50px;
+}
+.sidebar{
+    width: 300px;
+    padding-left: 50px;
+}
+.maincontent{
+    width: 80%;
+    height: 100%;
+    padding-left: 50px;
+}
+.maincontent-header{
+    width: 80%;
+    height: 100%;
+    padding-left: 50px;
+}
+.menu-name{
+    color: #636781;
+}
+.sidebar-list li{
+    /* list-style-image: url(img/listsymbol.png); */
+    list-style: square;
+    font-size: 30px;
+    padding-top: 30px;
+}
+.transaction-history{
+    background-color: #252b48;
+    border-radius: 15px;
+}
+.export{
+    padding-right: 13%;
+    font-size: 25px;
+    color: red;
+}
