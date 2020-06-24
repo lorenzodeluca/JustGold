@@ -60,12 +60,12 @@ class MyInventorySell extends React.Component {
                             <div className="row">
                                 <div className="col-md-auto">
                                     <div className="graph col">
-                                        <TradingViewWidget BarStyles="BarStyles.LINE" symbol="TVC:GOLD" theme={Themes.DARK} height="490px" width="1000" hide_top_toolbar="true" hide_legend='true' />
+                                        <GoldChart height="490px" width="1000" />
                                         <div class="graph-title">Gold price</div>
                                     </div>
                                 </div>
                                 <div className="col-md-auto">
-                                <Card title='We Buy' info="500kg available" value="HKD$30,200" unit="per ounce" percentage="5.25"></Card>
+                                    <Card title='We Buy' info="500kg available" value="HKD$30,200" unit="per ounce" percentage="5.25"></Card>
                                 </div>
                             </div>
                             <div className="pb-5"></div>

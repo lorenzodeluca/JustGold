@@ -40,7 +40,7 @@ class Home extends React.Component {
                                 </div>
                             </div>
                             <div className=" col">
-                                <GoldChart />
+                                <GoldChart height="490px" width="780"/>
                             </div>
                         </div>
 

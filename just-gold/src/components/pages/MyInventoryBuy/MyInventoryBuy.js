@@ -60,7 +60,7 @@ class MyInventoryBuy extends React.Component {
                             <div className="row">
                                 <div className="col-md-auto">
                                     <div className="graph col">
-                                        <TradingViewWidget BarStyles="BarStyles.LINE" symbol="TVC:GOLD" theme={Themes.DARK} height="490px" width="1000" hide_top_toolbar="true" hide_legend='true' />
+                                        <GoldChart height="490px" width="1000" />
                                         <div class="graph-title">Gold price</div>
                                     </div>
                                 </div>

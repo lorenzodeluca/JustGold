@@ -1,6 +1,11 @@
+body{
+    background-color: #1c2038;
+    height: 100%;
+    width: 100%;
+}
+
 .home{
     position: absolute;
-    background-color: #1c2038;
     height: 100%;
     width: 100%;
     color: white; /*#ccd7df */

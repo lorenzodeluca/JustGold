@@ -6,8 +6,8 @@ export default class GoldChart extends React.Component {
     render() {
         return (
             <div className="graph col">
-                <TradingViewWidget BarStyles="BarStyles.LINE" symbol="TVC:GOLD" theme={Themes.DARK} height="490px" width="780" hide_top_toolbar="true" hide_legend='true' />
-                <div class="graph-title">Gold price</div>
+                <TradingViewWidget BarStyles="BarStyles.LINE" symbol="XAUHKD" theme={Themes.DARK} height={this.props.height} width={this.props.width} />
+                <div class="graph-title"></div>
             </div>
         );
     };
