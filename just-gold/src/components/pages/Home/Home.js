@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import TradingViewWidget, { Themes } from 'react-tradingview-widget';
 import Card from '../Card/Card';
 import '../../../theme.css';
 import './home.css';
 import stonks from './stonks.png';
+import GoldChart from '../../GoldChart/GoldChart';
 
 class Home extends React.Component {
     state = {
@@ -26,7 +26,7 @@ class Home extends React.Component {
                             <Link className="link" to="#">About</Link>
                             <Link className="link" to="#">Help</Link>
                             <Link className="link" to="#">Contact</Link>
-                            <Link className="link" to="/myinventory">Login</Link>
+                            <Link className="link" to="/login">Login</Link>
                         </div>
                     </header>
                     <main className="pt-1">
@@ -39,8 +39,8 @@ class Home extends React.Component {
                                     <Card title='We Buy' info="500kg available" value="HKD$30,200" unit="per ounce" percentage="5.25"></Card>
                                 </div>
                             </div>
-                            <div className="graph col">
-                                <TradingViewWidget BarStyles="BarStyles.LINE" symbol="TVC:GOLD" theme={Themes.DARK} height="490px" width="780" hide_top_toolbar="true" hide_legend='true' />
+                            <div className=" col">
+                                <GoldChart />
                             </div>
                         </div>
 
@@ -51,7 +51,7 @@ class Home extends React.Component {
                         </h3>
 
                         <div className="row" style={{ backgroundColor: '#452d8b' }}>
-                            <div className="col" style={{margin: "auto"}}>
+                            <div className="col" style={{ margin: "auto" }}>
                                 <img height="250px" className="rounded mx-auto d-block" src={stonks}></img>
                             </div>
                             <div className="col pt-5 pb-5">

@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import Card from '../Card/Card';
 import '../../../theme.css';
 import sampleuserimg from './sampleprofile.png';
-import './MyInventory.css';
+import './MyInventorySell.css';
 import TransactionHistory from '../../TransactionHistoryTable/TransactionHistory';
 import SideBar from '../../SideBar/SideBar';
+import GoldChart from '../../GoldChart/GoldChart';
+import TradingViewWidget, { Themes } from 'react-tradingview-widget';
 
-class MyInventory extends React.Component {
+class MyInventorySell extends React.Component {
     state = {
         transactions: [
             {
@@ -50,20 +52,20 @@ class MyInventory extends React.Component {
                             Gold</h1>
                             </div>
                         </div>
-                        <div className="maincontent-header col-md-auto"><h1>My Inventory</h1></div>
+                        <div className="maincontent-header col-md-auto"><h1>Sell Gold</h1></div>
                     </div>
                     <div className="row pt-5">
-                        <SideBar/>
+                        <SideBar></SideBar>
                         <div className="maincontent col-md-auto">
                             <div className="row">
                                 <div className="col-md-auto">
-                                    <Card title='My Gold' info="" value="5 ounces" unit="" percentage="5.25" extra="Since last search" hidebutton="true"></Card>
+                                    <div className="graph col">
+                                        <TradingViewWidget BarStyles="BarStyles.LINE" symbol="TVC:GOLD" theme={Themes.DARK} height="490px" width="1000" hide_top_toolbar="true" hide_legend='true' />
+                                        <div class="graph-title">Gold price</div>
+                                    </div>
                                 </div>
                                 <div className="col-md-auto">
-                                    <Card title='Gold Picked-Up' info="" value="HKD$30,200" unit="" percentage="-1.25" extra="Since last search" hidebutton="true"></Card>
-                                </div>
-                                <div className="col-md-auto">
-                                    <Card title='We Buy' info="" value="HKD$30,200" unit="" percentage="3.72" extra="Since last search" hidebutton="true"></Card>
+                                <Card title='We Buy' info="500kg available" value="HKD$30,200" unit="per ounce" percentage="5.25"></Card>
                                 </div>
                             </div>
                             <div className="pb-5"></div>
@@ -81,4 +83,4 @@ class MyInventory extends React.Component {
         );
     };
 }
-export default MyInventory;
+export default MyInventorySell;

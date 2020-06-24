@@ -47,12 +47,7 @@ header {
     color: #636781;
 }
 
-.sidebar-list li {
-    /* list-style-image: url(img/listsymbol.png); */
-    list-style: square;
-    font-size: 30px;
-    padding-top: 30px;
-}
+
 
 .transaction-history {
     background-color: #252b48;
@@ -65,3 +60,15 @@ header {
     color: red;
 }
 
+.graph {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.graph-title {
+    position: absolute;
+    top: 18px;
+    left: 46px;
+    color: #999aa1; 
+}
