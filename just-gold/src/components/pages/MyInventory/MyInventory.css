@@ -60,7 +60,7 @@ header {
 }
 
 .export {
-    padding-right: 13%;
+    /*padding-right: 13%;*/
     font-size: 25px;
     color: red;
 }
