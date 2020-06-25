@@ -68,7 +68,7 @@ class MyInventory extends React.Component {
                             </div>
                             <div className="pb-5"></div>
                             <div className="transaction-history pt-4">
-                                <div className="transactions-header pb-4 pt-2 row justify-content-between">
+                                <div className="transactions-header pb-4 pt-2 row justify-content-around">
                                     <h2 className="col pl-5">Transaction History</h2>
                                     <div className="col" className="export">Export⇩</div>
                                 </div>
